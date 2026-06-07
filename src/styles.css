@@ -334,7 +334,7 @@ code {
 }
 
 .usecase-row {
-  width: min(940px, calc(100vw - 100px));
+  width: min(800px, calc(100vw - 100px));
   margin-top: 18px;
   display: flex;
   flex-wrap: nowrap;
@@ -351,9 +351,10 @@ code {
   flex: 0 0 auto;
   padding: 7px 9px;
   border: 1px solid color-mix(in srgb, var(--border) 78%, transparent);
+  border-radius: 20px;
   background: color-mix(in srgb, var(--surface) 62%, transparent);
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.7em;
   backdrop-filter: blur(14px);
 }
 
