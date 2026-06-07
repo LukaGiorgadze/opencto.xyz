@@ -1,33 +1,8 @@
 # OpenCTO Landing Page
 
-OpenCTO is a self-hosted AI operator for founder-led products.
+OpenCTO is a self-hosted AI operator for founder-led products. It runs on your machine, uses the tools you connect, and carries product work from request to verified result.
 
-Tell OpenCTO the outcome. It operates the workflow.
-
-OpenCTO runs on your machine as a self-hosted assistant and uses the tools you give it to get product work done. It can code, run commands, deploy, monitor, publish, and report back from Discord or Telegram.
-
-## What It Can Do
-
-- Launch a site and connect a domain
-- Fix failed deploys
-- Configure repos, env vars, and CI
-- Prepare release notes
-- Recover stuck workflows
-- Run recurring checks
-
-## How It Works
-
-- Plain-language outcome
-- Context from project, files, tools
-- Local machine and connected services
-- Keeps going through waits and failures
-- Reports changes, checks, and blockers
-
-## Install
-
-```sh
-curl -fsSL https://raw.githubusercontent.com/LukaGiorgadze/opencto/main/install.sh | sh
-```
+Main repo: [LukaGiorgadze/opencto](https://github.com/LukaGiorgadze/opencto)
 
 ## Landing Page Development
 
