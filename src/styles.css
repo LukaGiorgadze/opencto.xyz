@@ -251,7 +251,7 @@ h1 {
   max-width: 860px;
   margin: 18px 0 16px;
   font-size: clamp(3.15rem, 5.9vw, 5.75rem);
-  line-height: 0.9;
+  line-height: 1;
 }
 
 .lede {
@@ -390,11 +390,48 @@ code {
 }
 
 .workflow-summary ul {
-  margin: 20px 0 0;
+  margin: 18px 0 0;
   padding: 0;
   list-style: none;
   display: grid;
   gap: 12px;
+}
+
+.workflow-feature {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0 0;
+  border-top: 1px solid color-mix(in srgb, var(--border) 72%, transparent);
+}
+
+.workflow-feature svg {
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
+  background: color-mix(in srgb, var(--surface-soft) 72%, transparent);
+}
+
+.workflow-feature strong,
+.workflow-feature span {
+  display: block;
+}
+
+.workflow-feature strong {
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.workflow-feature span {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.45;
 }
 
 .workflow-summary li {
@@ -454,6 +491,10 @@ code {
   .workflow-summary ul {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
+  }
+
+  .workflow-feature {
+    max-width: 540px;
   }
 
   .workflow-summary li {
@@ -523,11 +564,7 @@ code {
   }
 
   .install-strip {
-    align-items: start;
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 18px 10px;
-    margin-top: 34px;
-    padding: 20px 14px;
+    display: none;
   }
 
   code {

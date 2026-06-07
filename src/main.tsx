@@ -7,6 +7,7 @@ import {
   Moon,
   Sun,
   Terminal,
+  Workflow,
 } from "lucide-react";
 import "./styles.css";
 
@@ -135,6 +136,13 @@ function App() {
                 <li key={item}>{item}</li>
               ))}
             </ul>
+            <div className="workflow-feature">
+              <Workflow size={18} />
+              <div>
+                <strong>Temporal durable workflows</strong>
+                <span>Long-running jobs resume through waits, retries, and failures.</span>
+              </div>
+            </div>
           </aside>
         </div>
       </section>
