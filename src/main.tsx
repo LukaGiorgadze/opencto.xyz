@@ -83,13 +83,7 @@ function App() {
             <p className="category">Self-hosted AI developer assistant for automated workflows</p>
             <h1 id="headline">Automate operations with OpenCTO</h1>
             <p className="lede">
-              OpenCTO is a self-hosted, open-source AI technical operator agent that runs in your environment and helps execute the work around building, launching, and maintaining software.
-            </p>
-            <p className="support-copy">
-              It can use coding agents, run commands, manage repositories, deploy apps, configure CI/CD, monitor systems, publish releases, and report progress back to #Discord or @Telegram.
-            </p>
-            <p className="support-copy">
-              Built for founders and small teams who want an AI assistant to handle the technical busywork between idea and launch.
+              OpenCTO is a self-hosted, open-source AI operator that handles the technical busywork of building, launching, and maintaining software. From managing repos and CI/CD to monitoring and report to #Discord or @Telegram, it automates the path from idea to launch for founders and small teams.
             </p>
 
             <div className="actions">
