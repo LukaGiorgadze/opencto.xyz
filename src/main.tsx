@@ -80,15 +80,16 @@ function App() {
 
         <div className="hero-grid">
           <section className="hero-copy" aria-labelledby="headline">
-            <p className="category">Self-hosted AI operator for founder-led products</p>
-            <h1 id="headline">Tell OpenCTO the outcome. It operates the workflow.</h1>
+            <p className="category">Self-hosted AI developer assistant for automated workflows</p>
+            <h1 id="headline">Automate operations with OpenCTO</h1>
             <p className="lede">
-              A self-hosted assistant that runs on your machine and uses various
-              tools to get product work done.
+              OpenCTO is a self-hosted, open-source AI technical operator agent that runs in your environment and helps execute the work around building, launching, and maintaining software.
             </p>
             <p className="support-copy">
-              It can code, run commands, deploy, monitor, publish, and report
-              back from #Discord or @Telegram.
+              It can use coding agents, run commands, manage repositories, deploy apps, configure CI/CD, monitor systems, publish releases, and report progress back to Discord or Telegram.
+            </p>
+            <p className="support-copy">
+              Built for founders and small teams who want an AI assistant to handle the technical busywork between idea and launch.
             </p>
 
             <div className="actions">
@@ -102,7 +103,7 @@ function App() {
                 GitHub
                 <ExternalLink size={14} />
               </a>
-              <span className="local-note">Manage it from Discord or Telegram.</span>
+              <span className="local-note">Manage it from #Discord or @Telegram.</span>
             </div>
 
             <div className="install-strip">
