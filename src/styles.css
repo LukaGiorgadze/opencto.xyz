@@ -13,9 +13,9 @@
   --warm: #9dff45;
   --ink: #050604;
   --shadow: rgba(0, 0, 0, 0.35);
-  --noise-opacity: 0.34;
-  --noise-blend-mode: screen;
-  --noise-filter: grayscale(100%) contrast(180%) brightness(130%);
+  --noise-opacity: 0.38;
+  --noise-blend-mode: overlay;
+  --noise-filter: grayscale(100%) contrast(170%) brightness(86%);
 }
 
 :root[data-theme="light"] {
@@ -191,6 +191,19 @@ a {
       transparent 78%
     );
   filter: blur(20px);
+}
+
+:root[data-theme="dark"] .hero-copy::before {
+  inset: -13rem -28rem -13rem -20rem;
+  background:
+    radial-gradient(
+      ellipse at 43% 46%,
+      color-mix(in srgb, var(--bg) 98%, transparent) 0%,
+      color-mix(in srgb, var(--bg) 92%, transparent) 46%,
+      color-mix(in srgb, var(--bg) 64%, transparent) 68%,
+      transparent 88%
+    );
+  filter: blur(28px);
 }
 
 .category,
