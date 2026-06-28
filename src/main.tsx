@@ -65,8 +65,6 @@ function App() {
 
   return (
     <main className="page-shell">
-      <WorkflowBackground />
-
       <section className="hero-shell">
         <header className="topbar">
           <a className="brand-mark" href="/" aria-label="OpenCTO home">
@@ -147,55 +145,6 @@ function App() {
         </div>
       </section>
     </main>
-  );
-}
-
-function WorkflowBackground() {
-  return (
-    <div className="workflow-bg" aria-hidden="true">
-      <svg viewBox="0 0 1200 720" preserveAspectRatio="xMidYMid slice">
-        <defs>
-          <radialGradient id="fieldGlow" cx="52%" cy="38%" r="62%">
-            <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.24" />
-            <stop offset="44%" stopColor="var(--warm)" stopOpacity="0.11" />
-            <stop offset="100%" stopColor="var(--bg)" stopOpacity="0" />
-          </radialGradient>
-          <filter id="softNoise">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.72"
-              numOctaves="3"
-              stitchTiles="stitch"
-            />
-            <feColorMatrix type="saturate" values="0" />
-            <feComponentTransfer>
-              <feFuncA type="table" tableValues="0 0.18" />
-            </feComponentTransfer>
-          </filter>
-        </defs>
-
-        <rect width="1200" height="720" fill="url(#fieldGlow)" />
-        <path className="coordinate-line" d="M90 548 C260 470 366 560 532 458 S836 290 1110 360" />
-        <path className="coordinate-line thin" d="M126 260 C330 192 442 286 604 248 S846 120 1090 178" />
-        <path className="coordinate-line thin" d="M52 430 C232 366 326 404 470 348 S705 236 928 274" />
-        <path className="moving-path" d="M90 548 C260 470 366 560 532 458 S836 290 1110 360" />
-        <path className="moving-path delay" d="M126 260 C330 192 442 286 604 248 S846 120 1090 178" />
-
-        <g className="nodes">
-          <circle cx="150" cy="526" r="4" />
-          <circle cx="336" cy="506" r="3" />
-          <circle cx="532" cy="458" r="5" />
-          <circle cx="746" cy="338" r="3" />
-          <circle cx="948" cy="338" r="5" />
-          <circle cx="1064" cy="358" r="3" />
-          <circle cx="232" cy="230" r="3" />
-          <circle cx="604" cy="248" r="4" />
-          <circle cx="872" cy="148" r="3" />
-        </g>
-
-        <rect width="1200" height="720" filter="url(#softNoise)" opacity="0.55" />
-      </svg>
-    </div>
   );
 }
 
